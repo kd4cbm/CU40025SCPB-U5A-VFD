@@ -42,7 +42,7 @@ Pins 15–18 are specific to the U5A.
 |---:|---|---|---|
 | 1 | GND | — | Logic ground |
 | 2 | +5 V | power in | Logic supply, 4.75–5.25 V |
-| 3 | NC / RESET | — | Not connected. On the W6J this becomes an active-low reset if jumper JP4 1-2 is shorted. *Unverified on U5A.* |
+| 3 | NC | — | No connection (per datasheet). Leave open. |
 | 4 | RS | in | Register select: 0 = instruction, 1 = data |
 | 5 | R/W | in | 1 = read, 0 = write. Tie to GND if you never read. |
 | 6 | E | in | Enable strobe; data is latched on the falling edge |
@@ -193,7 +193,8 @@ Tested on a CU40025SCPB-U5A with an Arduino Uno (September 2026):
 | Busy flag and address counter read | ✅ Verified |
 | DD RAM read-back (80/80), CG RAM read-back (64/64) | ✅ Verified |
 | All instructions (clear, home, entry mode, display/cursor/blink, shift, brightness, CG/DD RAM) | ✅ Verified, and checked by eye |
-| Pin 3 (reset), pins 15 and 16 | ❓ Unknown |
+| Pin 3 | ✅ No connection (per datasheet) |
+| Pins 15 and 16 | ❓ Unknown |
 | Supply currents; maximum voltage on pin 18 | ❓ Not yet measured |
 | i80 bus mode (jumper JP2), CN1 self-test header | ❓ Not tested on the U5A |
 | Differences between the U5A and W6J built-in fonts | ❓ Run test 3 and compare with the W6J datasheet |

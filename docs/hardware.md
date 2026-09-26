@@ -26,7 +26,7 @@
 |---:|---|---|
 | 1 | GND | Logic ground |
 | 2 | +5 V | Logic supply |
-| 3 | NC / RESET | See [Reset](#reset-pin-3-and-jp4) below |
+| 3 | NC | No connection (per datasheet). Leave open. |
 | 4 | RS | 0 = instruction register, 1 = data register |
 | 5 | R/W | 1 = read, 0 = write |
 | 6 | E | Enable strobe |
@@ -90,13 +90,16 @@ and no busy check is needed between the two halves. Reads also come back as
 two nibbles. Selected by the Function Set command (IF = 0); the library does
 this when you use the 7-argument constructor.
 
-## Reset (pin 3 and JP4)
+## Reset
 
-On the W6J, pin 3 is not connected unless jumper **JP4 pins 1-2** is
-shorted. It then becomes an active-low reset input. Alternatively, shorting
-**JP4 pins 2-3** for more than 10 µs resets the module. Whether the U5A has
-JP4 hasn't been checked. You don't need it: `begin()` fully reinitializes
+Pin 3 is **not connected** (per the datasheet). Leave it open. There is no
+reset line to drive, and you don't need one: `begin()` fully reinitializes
 the display by command.
+
+For reference, the W6J datasheet describes a factory jumper option: shorting
+**JP4 pins 1-2** turns pin 3 into an active-low reset input, and shorting
+**JP4 pins 2-3** for more than 10 µs resets the module. That option isn't
+fitted as standard. Whether the U5A even has JP4 hasn't been checked.
 
 ## Self-test (CN1)
 

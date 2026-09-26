@@ -12,8 +12,7 @@
  *   -----------------------------------
  *   Pin 1   GND            logic ground
  *   Pin 2   +5 V           logic supply (4.75 - 5.25 V)
- *   Pin 3   NC / RESET     no connection (reset input on the W6J only when
- *                          jumper JP4 1-2 is shorted; unverified on U5A)
+ *   Pin 3   NC             no connection (per datasheet); leave open
  *   Pin 4   RS             register select: 0 = instruction, 1 = data
  *   Pin 5   R/W            M68 mode: 1 = read, 0 = write   (WR in i80 mode)
  *   Pin 6   E              M68 mode: enable strobe         (RD in i80 mode)

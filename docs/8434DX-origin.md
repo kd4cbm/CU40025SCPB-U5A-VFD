@@ -49,7 +49,7 @@ project:
 - Measure the voltage the phone puts on **pin 18** during normal
   operation. That is the real design value, which may be more than the 18 V
   minimum.
-- Measure what the phone does with **pins 3, 15 and 16**.
+- Find out what the phone does with **pins 15 and 16**.
 - Measure the current on each rail.
 
 ## Sources
