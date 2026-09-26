@@ -210,6 +210,13 @@ If you can fill in any of the ❓ rows, please open an issue or a pull request.
 - [Origin: the Avaya 8434DX telephone](docs/8434DX-origin.md)
 - [Troubleshooting](docs/troubleshooting.md)
 
+## See also
+
+- [GU128X64-800B-VFD](https://github.com/kd4cbm/GU128X64-800B-VFD): an
+  Arduino driver and builder's guide for Noritake Itron's 128 × 64 graphic
+  VFD. It uses the same Arduino wiring for pins 2–12, so you can swap
+  between the two displays easily.
+
 ## References
 
 - Noritake Itron, *Vacuum Fluorescent Display Module Specification,
