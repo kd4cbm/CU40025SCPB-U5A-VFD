@@ -24,8 +24,8 @@
  *   Pin 12  DB5            data bus
  *   Pin 13  DB6            data bus
  *   Pin 14  DB7            data bus (also the busy flag when reading)
- *   Pin 15  unknown        leave unconnected
- *   Pin 16  unknown        leave unconnected
+ *   Pin 15  NC             no connection; leave open
+ *   Pin 16  NC             no connection; leave open
  *   Pin 17  GND            high-voltage supply ground
  *   Pin 18  +18 V minimum  VFD drive supply (replaces the W6J's DC/DC)
  *

@@ -38,7 +38,7 @@ advice for recovering the display:
   much easier.
 
 Photos and notes on the teardown (screw locations, connector type, the
-cable to the main board, and what the phone connects to pins 15 and 16)
+cable to the main board)
 would be very welcome as a contribution.
 
 ## If you have a working 8434DX
@@ -49,7 +49,6 @@ project:
 - Measure the voltage the phone puts on **pin 18** during normal
   operation. That is the real design value, which may be more than the 18 V
   minimum.
-- Find out what the phone does with **pins 15 and 16**.
 - Measure the current on each rail.
 
 ## Sources

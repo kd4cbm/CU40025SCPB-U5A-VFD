@@ -54,8 +54,8 @@ Pins 15–18 are specific to the U5A.
 | 12 | DB5 | in/out | Data bit 5 |
 | 13 | DB6 | in/out | Data bit 6 |
 | 14 | DB7 | in/out | Data bit 7; also the busy flag when reading status |
-| 15 | unknown | — | *Function not yet identified — leave unconnected* |
-| 16 | unknown | — | *Function not yet identified — leave unconnected* |
+| 15 | NC | — | No connection. Leave open. |
+| 16 | NC | — | No connection. Leave open. |
 | 17 | GND | — | High-voltage supply ground |
 | 18 | +18 V (minimum) | power in | VFD drive supply |
 
@@ -194,7 +194,7 @@ Tested on a CU40025SCPB-U5A with an Arduino Uno (September 2026):
 | DD RAM read-back (80/80), CG RAM read-back (64/64) | ✅ Verified |
 | All instructions (clear, home, entry mode, display/cursor/blink, shift, brightness, CG/DD RAM) | ✅ Verified, and checked by eye |
 | Pin 3 | ✅ No connection (per datasheet) |
-| Pins 15 and 16 | ❓ Unknown |
+| Pins 15 and 16 | ✅ No connection |
 | Supply currents; maximum voltage on pin 18 | ❓ Not yet measured |
 | i80 bus mode (jumper JP2), CN1 self-test header | ❓ Not tested on the U5A |
 | Differences between the U5A and W6J built-in fonts | ❓ Run test 3 and compare with the W6J datasheet |

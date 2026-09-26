@@ -31,17 +31,14 @@
 | 5 | R/W | 1 = read, 0 = write |
 | 6 | E | Enable strobe |
 | 7–14 | DB0–DB7 | Data bus. DB7 is the busy flag during a status read. |
-| 15 | unknown | Leave unconnected |
-| 16 | unknown | Leave unconnected |
+| 15 | NC | No connection. Leave open. |
+| 16 | NC | No connection. Leave open. |
 | 17 | GND | High-voltage supply ground |
 | 18 | +18 V min | VFD drive supply |
 
 Pin 1 is normally marked on the PCB (a square pad, or a "1" in the
 silkscreen). **Check pin 1 before you apply power:** reversing a
 connector puts the supply on the data bus.
-
-Pins 15 and 16 have not been identified. If you trace them (for example
-back to the 8434DX main board), please share what you find.
 
 ## Electrical characteristics of the logic interface
 
